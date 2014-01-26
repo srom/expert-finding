@@ -2,6 +2,9 @@ import re, string, time, traceback, requests
 import nltk
 from alchemyapi import AlchemyAPI
 
+# API KEYS
+TAGME_API_KEY = '' # add you TAGME API key
+
 MULTIPLE_SPACES_REGEX = re.compile('\s\s+')
 OTHER_THAN_SPACE_REGEX = re.compile('(\n|\t|\r)')
 HASHTAG_REGEX = re.compile(ur'#|\uff03')
@@ -113,7 +116,7 @@ def extract_entities(content):
     # sanitize
     sane_content = sanitize_content(content)
     parameters = {
-        'key':'rslondon2014',
+        'key':TAGME_API_KEY,
         'text':sane_content,
         'lang':'en'
     }

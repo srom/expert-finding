@@ -11,7 +11,7 @@ MAX_ID_REGEX = re.compile(r'max_id=([^&]+)')
 CURSOR_REGEX = re.compile(r'cursor=([^&]+)')
 
 # Instagram API object
-api = client.InstagramAPI(client_id='f341271878bd4656b2c743aae1d67f9a')
+api = client.InstagramAPI(client_id='') # add your own client_id
 
 class InstagramCrawler(Crawler):
     '''InstagramCrawler implements abstract methods of Crawler.'''

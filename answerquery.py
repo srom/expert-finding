@@ -5,10 +5,11 @@ from peewee import *
 # weighting factor between stems and entities in resource score calculation
 ALPHA = 0.6
 
+# example of a query
 query = 'What are some good place to hang out for a young professional in East London?'
 
 # init
-db = MySQLDatabase('expertfinding', host='127.0.0.1', user='root', passwd='T1JeWw3S')
+db = MySQLDatabase('expertfinding', host='127.0.0.1', user='root', passwd='')
 db.connect()
 # start fresh
 graph.UserScore.create_table(True)

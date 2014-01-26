@@ -5,7 +5,7 @@ from peewee import *
 # pattern to match some unicode characters non recognized by mysql
 SANITIZE_UNICODE = re.compile(u'[^\u0000-\uD7FF\uE000-\uFFFF]', re.UNICODE)
 
-db = MySQLDatabase('expertfinding', host='127.0.0.1', user='root', passwd='T1JeWw3S')
+db = MySQLDatabase('expertfinding', host='127.0.0.1', user='root', passwd='')
 
 class BaseModel(Model):
     class Meta:
