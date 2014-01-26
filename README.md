@@ -14,4 +14,4 @@ Implementation of the paper ["Choosing the right crowd: expert finding in social
 
 ### Extend
 
-You can easily add another crawler (e.g Twitter crawler) by extending the class Crawler. See instagram_crawler.py for a working example of a class extending Crawler.
+You can easily add another crawler (e.g Twitter crawler) by extending the class Crawler. See [instagram_crawler.py](https://github.com/srom/expert-finding/blob/master/instagram_crawler.py) for a working example of a class extending Crawler.
